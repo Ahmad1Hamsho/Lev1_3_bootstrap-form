@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Lev1_3_bootstrap-form</title>
+    <style>
+      .form-control {
+        background-color: #e9e9e9;
+      }
+
+      .submit {
+        color: #fff;
+        background-color: #891b55;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="form" class="container">
+      <div class="row">
+        <div class="col-sm-8">
+     
+          <div class="pb-2 title">
+            <p>Bitte füllen Sie das Kontaktformular aus</p>
+          </div>
+          <div class="text">
+        
+            <p>
+              Bitte füllen Sie das Kontaktformular aus, wenn Sie eine
+              Serviceanfrage stellen, uns Feedback geben möchten oder von einer
+              Annullierung betroffen waren.
+            </p>
+          </div>
+          <!-- Form -->
+          <form class="form-group border-right">
+            <!-- Vorname -->
+            <div class="form-row mb-3 col-md-12">
+              <div class=" col-md-6">
+
+                <input
+                  type="text"
+                  class="form-control  rounded-0 input-block"
+                  id="vorname"
+                  placeholder="Vorname"
+                /></div>
+               <div class=" col-md-6"> <input type="text" class="form-control  rounded-0 input-block" id="nachname" placeholder="Nachname" /></div>
+              </div>
+             
+              <div class="form-row mb-3 col-md-12">
+                <div class="col-md-6"><input type="email" class="form-control  rounded-0 input-block" id="email" placeholder="Email" /></div>
+               <div class="col-md-6"> <input type="number" class="form-control  rounded-0 input-block" id="buchungsnummmer" placeholder="Buchungsnummer" /></div>
+              </div>
+             
+              <div class="form-row mb-3 col-md-12">
+                <div class="col-md-6"><input
+                  type="number"
+                  class="form-control  rounded-0 input-block"
+                  id="clubMitgliedsNr"
+                  placeholder="Boomerang Club Mitglieds-Nr"
+                /></div>
+               <div class="col-md-6"> <input type="number" class="form-control  rounded-0 input-block" id="moreMitgliedsNr" placeholder="Miles More Mitglieds-Nr" /></div>
+              </div>
+              
+              <div class="form-col mb-3 ">
+            <select id="themen" class="form-control  rounded-0 input-block col-md-12">
+                <option value="" disabled selected hidden >themen auswählen</option>
+                      <option value="An Bord">An Bord</option>
+                      <option value="Buchung">Buchung</option>
+                      <option value="Check-in">Check-in</option>
+                      <option value="Am Boden">Am Boden</option>
+                      <option value="Kreditkarten">Kreditkarten</option>
+                    </select>
+                </select>
+              </div>
+              <div class="form-col mb-3">
+                <select id="rubrik" class="form-control  rounded-0 ">
+                    <option value="" disabled selected hidden>Rubrik auswählen</option>
+                    <option value="An Bord">Bordmagazin</option>
+                    <option value="Buchung">Elektronische Geräte</option>
+                    <option value="Check-in">Skyshop</option>
+                    
+                </select>
+                </select>
+              </div>
+              <textarea
+                name=""
+                id=""
+                class="form-control mb-3  rounded-0 "
+                cols="30"
+                rows="10"
+                placeholder="Ihre Nachricht"
+              ></textarea>
+              <button type="submit" class="btn submit  rounded-0 offset-md-9">Anfrage abschicken</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
